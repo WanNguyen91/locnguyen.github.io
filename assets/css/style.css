@@ -1,0 +1,467 @@
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {
+	font: 16px/26px Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #222020;}
+
+a {color: blue;}
+a:hover {color: blue;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.wrapper-loaded {
+    opacity: 1;
+}
+
+body{
+    background-image: url(../images/body_bg.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    color: #222020;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 8em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    height: 34em;
+    overflow: hidden;
+}
+
+.borderHL {
+    border-bottom: 5px solid #4D4D4D;
+    height: 8em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#project_wrapper, #resume_wrapper, #contact_wrapper {
+    width: 70%;
+    margin: 2em auto;
+    height: auto;
+    background: #ffffff;
+    padding: 2.5em;
+    overflow: hidden;
+}
+.titleProjects, .titleResume, .titleContact {
+    border-bottom: 1px solid #4D4D4D;
+}
+
+a {
+    color: #177EE5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1968B7;
+}
+
+.infoResume{
+    margin-top: 2em;
+    display: block;
+    height: 14em;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.imageInfo {
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+    padding: 5px;
+}
+
+.imageInfo > img {
+    border: medium none;
+    vertical-align: middle;
+}
+
+.textResume {
+    float: left;
+    font: normal 1.166em "Noticia Text",serif;
+    margin: 0 2em;
+}
+
+.logoSchool {
+    display: block;
+    float: right;
+    width: 3.5em;
+}
+.underline {
+    border: 1px solid #ccc;
+    margin: 0 12em;
+}
+.name_job{
+    width: 35%;
+    height: 7em;
+    margin: 2em;
+    float: left;
+}
+
+.font_0 {
+    color: #4D4D4D;
+    font: bold 43px/1.2em "Noticia Text",serif
+}
+.font_1 {
+    color: #4D4D4D;
+    font: bold 36px/1.2em "Noticia Text",serif
+}
+.font_2 {
+    color: #4D4D4D;
+    font: bold 24px/1.2em "Noticia Text",serif
+}
+.font_3 {
+    color: rgba(77, 77, 77, 1);
+    font: 80px/1.2em "Noticia Text",serif
+}
+
+.font_4 {
+    font: 46px/1.2em "Noticia Text",serif;
+    color: rgba(77, 77, 77, 1);
+}
+
+.font_5 {
+    font: normal 1.5em "Noticia Text",serif;
+    color: #000;
+}
+
+.font_6 {
+    color: rgba(77, 77, 77, 1);
+    font: 20px/1.2em "Noticia Text",serif!important;
+    line-height: 1.5em;
+    letter-spacing: normal;
+}
+
+nav{
+    width: 50%;
+    height: 7em;
+    margin: 2em;
+    float: left;
+}
+
+ul{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    top: 47%;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    width: 22%;
+    text-align: center;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+li a{
+    cursor: pointer;
+    font: 17px/1.2em "Noticia Text",serif;
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #95D36F;
+}
+
+.avatarInfo{
+    float: left;
+    width: 40%;
+}
+
+.avatarInfo img {
+    border-radius: 50%;
+    height: 25em;
+    width: 25em;
+}
+
+.aboutInfo {
+    float: left;
+    width: 55%;
+    margin-left: 5%;
+}
+
+.buttonProjects, .buttonResume, .buttonContact {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+    -webkit-transition: all .25s ease .2s;
+       -moz-transition: all .25s ease .2s;
+        -ms-transition: all .25s ease .2s;
+         -o-transition: all .25s ease .2s;
+            transition: all .25s ease .2s;
+}
+
+.buttonProjects {
+    background-color: rgba(97, 207, 211, 1);
+}
+
+.buttonResume {
+    background-color: #95D36F;
+    margin: 0 2em;
+}
+
+.buttonContact {
+    background-color: rgba(232, 53, 86, 1);
+}
+
+.buttonProjects:hover, .buttonResume:hover, .buttonContact:hover {
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 0 solid rgba(232, 53, 86, 1);
+}
+
+.buttonProjects:hover {
+    background-color: rgba(64, 138, 141, 1);
+}
+
+.buttonResume:hover {
+    background-color: #72A354;
+}
+
+.buttonContact:hover {
+    background-color: rgba(154, 35, 57, 1);
+}
+
+.buttonLink {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.buttonLabel {
+    color: #ffffff;
+    font: 13px/1.2em "Open Sans",sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 42%;
+}
+
+.textInfo {
+    clear: both;
+    color: rgba(77, 77, 77, 1);
+    font: 16px/1.2em "Open Sans",sans-serif;
+    margin-top: 2em;
+}
+
+footer {
+    clear: both;
+    background-color: rgba(97, 207, 211, 1);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 8em;
+    z-index: 10;
+}
+
+#boxFooter {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2.5em;
+}
+
+.boxImage {
+    float: left;
+    width: 6%;
+}
+
+.boxImage img {
+    border-radius: 50%;
+}
+
+.boxText {
+    float: left;
+    width: 20%;
+    color: #ffffff;
+    font: 17px/1.2em "Open Sans",sans-serif;
+}
+
+.socialNetwork > .boxText {
+    width: 15%!important;
+}
+
+.contact > .boxText > span {
+    line-height: 2.5em;
+}
+
+.scrollToTop {
+    background: url("../images/iconTop.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 10em;
+    display: block;
+    height: 48px;
+    position: fixed;
+    right: 5em;
+    width: 48px;
+    border-radius: 20%;
+    display:none;
+}
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 400px) {
+
+}
+
+@media screen and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+@media screen and (min-width: 1400px) {
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
